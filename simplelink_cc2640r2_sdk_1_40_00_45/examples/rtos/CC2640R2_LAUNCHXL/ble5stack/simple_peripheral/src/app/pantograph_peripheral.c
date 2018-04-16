@@ -71,9 +71,9 @@
 
 #include "board_key.h"
 
-#include "throughput_peripheral_menu.h"
+#include "pantograph_peripheral_menu.h"
 
-#include "throughput_peripheral.h"
+#include "pantograph_peripheral.h"
 
 /*********************************************************************
  * CONSTANTS

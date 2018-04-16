@@ -8,7 +8,7 @@
  Target Device: CC2640R2
 
  ******************************************************************************
- 
+
  Copyright (c) 2013-2017, Texas Instruments Incorporated
  All rights reserved.
 
@@ -60,7 +60,7 @@
 #include "hal_assert.h"
 #include "bcomdef.h"
 #include "peripheral.h"
-#include "simple_peripheral.h"
+#include "pantograph_peripheral.h"
 
 /* Header files required to enable instruction fetch cache */
 #include <inc/hw_memmap.h>
