@@ -1,15 +1,15 @@
 /******************************************************************************
 
- @file       simple_central.h
+ @file  simple_central.h
 
- @brief This file contains the Simple Central sample application
+ @brief This file contains the Simple BLE Central sample application
         definitions and prototypes.
 
  Group: CMCU, SCS
  Target Device: CC2640R2
 
  ******************************************************************************
- 
+
  Copyright (c) 2013-2017, Texas Instruments Incorporated
  All rights reserved.
 
@@ -41,8 +41,8 @@
  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
  ******************************************************************************
- Release Name: simplelink_cc2640r2_sdk_1_40_00_45
- Release Date: 2017-07-20 17:16:59
+ Release Name: simplelink_cc2640r2_sdk_1_35_00_07_eng
+ Release Date: 2017-03-23 10:36:21
  *****************************************************************************/
 
 #ifndef SIMPLEBLECENTRAL_H
@@ -73,9 +73,26 @@ extern "C"
  * FUNCTIONS
  */
 /*
- * Task creation function for the Simple Central.
+ * Task creation function for the Simple BLE Central.
  */
 extern void SimpleBLECentral_createTask(void);
+
+/*
+ * Functions for menu action
+ */
+
+/* Actions for Menu: Scan and Connect - Select */
+bool SimpleBLECentral_doScanAndConnect(uint8 index);
+
+/* Actions for Menu: Set PHY - Select */
+bool SimpleBLECentral_doSetPhy(uint8 index);
+
+/* Actions for Menu: Set PDU - Select */
+bool SimpleBLECentral_doSetDLEPDU(uint8 index);
+
+/* Actions for Menu: RSSI - Toggle */
+bool SimpleBLECentral_doToggleRSSI(uint8 index);
+bool SimpleBLECentral_doDisconnect(uint8 index);
 
 /*********************************************************************
 *********************************************************************/
