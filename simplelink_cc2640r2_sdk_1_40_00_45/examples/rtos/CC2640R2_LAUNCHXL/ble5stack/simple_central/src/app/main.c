@@ -8,7 +8,7 @@
  Target Device: CC2640R2
 
  ******************************************************************************
- 
+
  Copyright (c) 2013-2017, Texas Instruments Incorporated
  All rights reserved.
 
@@ -59,7 +59,7 @@
 #include <icall.h>
 #include "hal_assert.h"
 #include "central.h"
-#include "simple_central.h"
+#include "pantograph_central.h"
 
 /* Header files required to enable instruction fetch cache */
 #include <inc/hw_memmap.h>

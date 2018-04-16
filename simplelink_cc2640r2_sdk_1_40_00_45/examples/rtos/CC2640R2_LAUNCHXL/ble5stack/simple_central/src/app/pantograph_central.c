@@ -70,12 +70,12 @@
 #include "board_key.h"
 #include <menu/two_btn_menu.h>
 
-#include "throughput_central_menu.h"
+#include "pantograph_central_menu.h"
 #include "throughput_service.h"
 
 #include "board.h"
 
-#include "throughput_central.h"
+#include "pantograph_central.h"
 
 #include "ble_user_config.h"
 

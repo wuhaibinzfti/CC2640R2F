@@ -3,8 +3,8 @@
 
 #if defined(BLE_V50_FEATURES) && (BLE_V50_FEATURES & PHY_2MBPS_CFG) && !defined(Display_DISABLE_ALL)
 #include <menu/two_btn_menu.h>
-#include "throughput_central_menu.h"
-#include "throughput_central.h"
+#include "pantograph_central_menu.h"
+#include "pantograph_central.h"
 
 /*
  * Menu Lists Initializations
