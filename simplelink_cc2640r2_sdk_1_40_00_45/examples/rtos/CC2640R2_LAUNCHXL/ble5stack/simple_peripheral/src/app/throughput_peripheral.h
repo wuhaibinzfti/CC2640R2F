@@ -1,15 +1,15 @@
 /******************************************************************************
 
- @file       simple_peripheral.h
+ @file  throughput_peripheral.h
 
- @brief This file contains the Simple Peripheral sample application
+ @brief This file contains the Simple BLE Peripheral sample application
         definitions and prototypes.
 
  Group: CMCU, SCS
  Target Device: CC2640R2
 
  ******************************************************************************
- 
+
  Copyright (c) 2013-2017, Texas Instruments Incorporated
  All rights reserved.
 
@@ -41,8 +41,8 @@
  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
  ******************************************************************************
- Release Name: simplelink_cc2640r2_sdk_1_40_00_45
- Release Date: 2017-07-20 17:16:59
+ Release Name: simplelink_cc2640r2_sdk_1_35_00_07_eng
+ Release Date: 2017-03-23 10:36:21
  *****************************************************************************/
 
 #ifndef SIMPLEBLEPERIPHERAL_H
@@ -77,7 +77,7 @@ extern "C"
  */
 
 /*
- * Task creation function for the Simple Peripheral.
+ * Task creation function for the Simple BLE Peripheral.
  */
 extern void SimpleBLEPeripheral_createTask(void);
 
@@ -90,6 +90,13 @@ bool SimpleBLEPeripheral_doStartDevice(uint8 index);
 
 /* Actions for Menu: Set PHY - Select */
 bool SimpleBLEPeripheral_doSetPhy(uint8 index);
+
+/* Actions for Menu: Set PDU - Select */
+bool SimpleBLEPeripheral_doSetDLEPDU(uint8 index);
+
+/* Actions for Menu: Toggle Throughput - Select */
+extern bool SimpleBLEPeripheral_doThroughputDemo(uint8 index);
+
 #endif  // !Display_DISABLE_ALL
 
 /*********************************************************************

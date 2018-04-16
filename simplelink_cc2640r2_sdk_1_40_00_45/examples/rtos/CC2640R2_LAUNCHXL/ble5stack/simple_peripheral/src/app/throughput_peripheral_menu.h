@@ -1,14 +1,14 @@
 /******************************************************************************
 
- @file       simple_peripheral_menu.h
+ @file  throughput_peripheral_menu.h
 
- @brief This file contains menu objects for simple_peripheral.
+ @brief This file contains menu objects for throughput_peripheral.
 
  Group: WCS BTS
  Target Device: CC2640R2
 
  ******************************************************************************
- 
+
  Copyright (c) 2016-2017, Texas Instruments Incorporated
  All rights reserved.
 
@@ -40,8 +40,8 @@
  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
  ******************************************************************************
- Release Name: simplelink_cc2640r2_sdk_1_40_00_45
- Release Date: 2017-07-20 17:16:59
+ Release Name: simplelink_cc2640r2_sdk_1_35_00_07_eng
+ Release Date: 2017-03-23 10:36:21
  *****************************************************************************/
 
 #ifndef SIMPLE_PERIPHERAL_MENU_H
@@ -52,6 +52,9 @@ extern "C"
 {
 #endif
 
+// Includes
+#include <menu/two_btn_menu.h>
+
 /*
  * Menus Declarations
  */
@@ -60,7 +63,19 @@ extern "C"
 extern tbmMenuObj_t sbpMenuMain;
 
 /* Items of (Main) */
-/* Action items are defined in simple_peripheral_menu.c */
+extern tbmMenuObj_t sbpMenuSetPhy;
+extern tbmMenuObj_t sbpMenuSetDLEPDU;
+
+/* Items of (ToggleThroughput) */
+extern bool SimpleBLEPeripheral_doThroughputDemo(uint8 index);
+
+/* Items of (SetPhy) */
+extern bool SimpleBLEPeripheral_doSetPhy(uint8 index);
+
+/* Items of (SetDLEPDU) */
+extern bool SimpleBLEPeripheral_doSetDLEPDU(uint8 index);
+
+/* Action items are defined in throughput_peripheral_menu.c */
 
 #ifdef __cplusplus
 }
